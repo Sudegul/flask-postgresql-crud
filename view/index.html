@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Kullanıcı Bilgi Formu</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>Kullanıcı Bilgileri</h1>
+
+  <!-- Arama Kutusu -->
+  <input type="text" id="searchInput" placeholder="Kayıtlarda ara..." />
+
+  <!-- Form -->
+  <form id="userForm">
+    <input type="text" id="name" placeholder="Ad Soyad" required>
+    <input type="email" id="email" placeholder="E-posta" required>
+    <input type="tel" id="phone" placeholder="Telefon">
+    <button type="submit">Ekle</button>
+  </form>
+
+  <!-- Tümünü Temizle Butonu -->
+  <button id="clearAll">Tümünü Temizle</button>
+
+  <!-- Kayıt Sayacı -->
+  <p id="recordCount">Toplam 0 kayıt</p>
+
+  <!-- Tablo -->
+  <table id="userTable">
+    <thead>
+      <tr>
+        <th>Ad Soyad</th>
+        <th>E-posta</th>
+        <th>Telefon</th>
+        <th>İşlem</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script src="../controller/app.js"></script>
+</body>
+</html>
